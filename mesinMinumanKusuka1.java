@@ -1,39 +1,39 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-class checkMenu{
-	static String juice, coffe, airPutih, minumanSoda;
+class menu{
+	static int juice, coffe, airPutih, minumanSoda;
 
-	public String getJuice(){
+	public int getJuice(){
 		return this.juice;
 	}
 
-	public String getCoffe(){
+	public int getCoffe(){
 		return this.coffe;
 	}
 
-	public String getAirPutih(){
+	public int getAirPutih(){
 		return this.airPutih;
 	}
 
-	public String getMinumanSoda(){
+	public int getMinumanSoda(){
 		return this.minumanSoda;
 	}
 
-	void setBeliJuice(String juice){
-		this.juice = juice;
+	void setBeliJuice(int juice){
+		this.juice = 10000;
 	}
 
-	void setBeliCoffe(String coffe){
-		this.coffe = coffe;
+	void setBeliCoffe(int coffe){
+		this.coffe = 7000;
 	}
 
-	void setBeliAirPutih(String airPutih){
-		this.airPutih = airPutih;
+	void setBeliAirPutih(int airPutih){
+		this.airPutih = 5000;
 	}
 
-	void setBeliMinumanSoda(String minumanSoda){
-		this.minumanSoda = minumanSoda;
+	void setBeliMinumanSoda(int minumanSoda){
+		this.minumanSoda = 13000;
 	}
 }
 
@@ -48,17 +48,21 @@ class diskon{
 	}
 }
 
-class menuMethod{
-	void menu (){
+class printNota{
+
+}
+
+class checkMenu{
+	void checkMenu (){
 	int scan;
 	Scanner keyboard = new Scanner(System.in);
 
 	System.out.println("--------------------");
 	System.out.println(" Silahkan Pilih Minuman yang Tersedia");
-	System.out.println(" 1. Juice");
-	System.out.println(" 2. Coffe");
-	System.out.println(" 3. Air Putih");
-	System.out.println(" 4. Minuman Soda");
+	System.out.println(" 1. Juice ");
+	System.out.println(" 2. Coffe ");
+	System.out.println(" 3. Air Putih ");
+	System.out.println(" 4. Minuman Soda ");
 	System.out.println("--------------------");
 
 	System.out.print("Masukkan No Pilihan Anda (1-4) :");
@@ -67,7 +71,7 @@ class menuMethod{
 
 	switch (scan){
 		case 1:
-			System.out.println( "Harganya adalah 10.000");
+			System.out.println( "Harganya adalah :" );
 			
 		break;
 		case 2:
@@ -82,7 +86,6 @@ class menuMethod{
 		System.out.println("harganya adalah 13000" );
 
 		}
-		System.out.println();
 	}
 }
 
